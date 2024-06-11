@@ -1,0 +1,27 @@
+.footer {
+  &__section {
+    @apply py-[4.8rem];
+  }
+
+  &__top,
+  &__bottom {
+    @include page-grid;
+  }
+
+  &__top {
+    @apply mb-[16rem];
+    @include fluid-type(430px, 1440px, 16px, 24px);
+  }
+
+  &__bottom {
+    @apply text-base;
+  }
+  &__menu {
+    @apply ml-0;
+    list-style: none;
+
+    li {
+      @apply mb-4;
+    }
+  }
+}

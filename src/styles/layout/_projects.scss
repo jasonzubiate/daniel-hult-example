@@ -1,0 +1,19 @@
+.projects {
+  @include page-grid;
+
+  &__left {
+    @apply h-full;
+  }
+  &__image {
+    @apply h-full;
+  }
+  &__right {
+    @apply my-[16rem];
+  }
+  &__content {
+    @apply max-w-[45ch];
+  }
+  &__text {
+    @apply mb-[4.8rem];
+  }
+}

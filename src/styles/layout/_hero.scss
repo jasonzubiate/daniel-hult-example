@@ -1,0 +1,27 @@
+.hero {
+  &__content {
+    @apply flex justify-center items-center flex-col max-w-[100ch] text-center;
+    margin-inline: auto;
+  }
+
+  &__title {
+    @apply text-[var(--color-text--light)];
+
+    span span span {
+      @apply text-[var(--color-text--dark)];
+    }
+  }
+
+  &__image {
+    @apply relative;
+  }
+
+  &__play {
+    @include center-align;
+    @apply flex items-center gap-4 z-10 cursor-pointer text-[var(--color-text--white)];
+
+    &__text {
+      @include fluid-type(430px, 1440px, 16px, 24px);
+    }
+  }
+}

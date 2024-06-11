@@ -1,0 +1,15 @@
+.list {
+  @apply ml-0 mb-[4.8rem];
+  list-style: none;
+
+  &__item {
+    @include page-grid;
+    @apply relative py-8;
+
+    &::after {
+      content: "";
+      @apply absolute top-0 left-0 w-full h-[1px] bg-[var(--color-primary)];
+      transform-origin: center left;
+    }
+  }
+}

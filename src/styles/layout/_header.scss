@@ -1,0 +1,11 @@
+.header {
+  @apply flex justify-between items-center pt-6;
+
+  &__hamburger {
+    @apply border-none flex flex-col gap-1.5 cursor-pointer;
+  }
+
+  .line {
+    @apply w-6 h-[1px] bg-[var(--color-primary)]
+  }
+}

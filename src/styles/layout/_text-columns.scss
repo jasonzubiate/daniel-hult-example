@@ -1,0 +1,7 @@
+.text-columns {
+  @include page-grid;
+
+  .button {
+    @apply ml-auto;
+  }
+}
